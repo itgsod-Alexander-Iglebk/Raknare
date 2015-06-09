@@ -14,12 +14,7 @@ Den här uppgiften går ut på att skriva ett program som returnerar en sträng 
 | Förmågor                                       | E 																			| C | A |
 |------------------------------------------------|------------------------------------------------------------------------------|---|---|
 | Grundläggande syntax		                     | Du kan redogöra för och använda programmeringsspråkets grundläggande syntax  |   |   |
-| Villkor och IF-satser		                     | Du kan redogöra för och använda villkor och IF-satser                        |   |   |
-| Loopar & iteration                             | Du kan redogöra för och använda loopar och iterera över listor               |   |   |
-
-### Kodning och kodningsstil ###
-
-| Förmågor                                      | E                                                                         | C                                               | A                                              |
+| Villkor och IF-satser		                     | Du kan redogöra för och använda villkor                                  | C                                               | A                                              |
 |-----------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------|------------------------------------------------|
 | Komplexitet									| **Du kan skriva enkla program**                                               | Du kan skriva lite mer avancerade program       | Du kan skriva komplexa program
 | Sekventiell- & funktionsbaserad programmering | Du använder dig av sekventiell programmering och fördefinerade funktioner | **Du skapar och använder enkla funktioner**         | Du skapar mer komplexa funktioner              |
@@ -30,7 +25,17 @@ Den här uppgiften går ut på att skriva ett program som returnerar en sträng 
 
 Den här uppgiften går ut på att skriva ett program som returnerar alla tal från och med ett starttal till och med ett sluttal.
 
-Du skall skriva en funktion: `count` som tar två parametrar (`start` och `stop`)
+Du skall skriva en funktion: `count` som tar två parametrar
+	#=> "3, 4, 5"
+
+	count(start: 2, stop: -5)
+	count(start=3, stop=5 )
+	>>> '3, 4, 5'
+
+	count(start: 2, stop: -5)
+	>>> '2, 1, 0, -1, -2, -3, -4, -5'
+
+Gör en `fork` av repot. Klona sen ner till din dator. K(`start` och `stop`)
 
 Funktionen skall sen returnera ut en komma separerad sträng med alla tal från och med starttalet till och med sluttalet.
 
@@ -38,22 +43,16 @@ Funktionen skall sen returnera ut en komma separerad sträng med alla tal från 
 
 #### Ruby ####
 
-	count(start: 3, stop: 5)
-	#=> "3, 4, 5"
+	count(start: 3, stop: 5)om ihåg att checka in dina ändringar och synka med GitHub.
 
-	count(start: 2, stop: -5)
+### Flödesschema ###
 	#=> "2, 1, 0, -1, -2, -3, -4, -5"
-	
+
 	count(start: 1, stop: 1)
 	#=> "1"
 
 #### Python ####
 
-	count(start=3, stop=5 )
-	>>> '3, 4, 5'
-
-	count(start: 2, stop: -5)
-	>>> '2, 1, 0, -1, -2, -3, -4, -5'
 	
 	count(start: 1, stop: 1)
     >>> "1"
@@ -61,10 +60,6 @@ Funktionen skall sen returnera ut en komma separerad sträng med alla tal från 
 ## Genomförande ##
 
 ### Versionshantering ###
-
-Gör en `fork` av repot. Klona sen ner till din dator. Kom ihåg att checka in dina ändringar och synka med GitHub.
-
-### Flödesschema ###
 
 Innan du börjar koda ska du skapa ett flödesschema för programmet.
 När du känner att du har ett fungerande flödesschema, be läraren att kolla på det.
